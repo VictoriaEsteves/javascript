@@ -16,11 +16,12 @@
     <h1>Iniciando Estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em javascript</p>
-    <div>Clique aqui</div>
+    <div id="msg">Clique aqui</div>
 
     <script>
         var p1 = window.document.getElementsByTagName('p')[1] // getElements or Element pega oq voce precisa por nome id, class, tags e muitos outros
-
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'black'
     </script>
 </body>
 </html>
