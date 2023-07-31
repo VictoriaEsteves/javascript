@@ -16,14 +16,34 @@
         <h1>Por favor informe de onde você é:</h1>
         <label for="pais">Onde você mora :</label>
         <input type="text" id="pais">
-        <datalist>
-            <option value="Eua">Estados Unidos</option>
-            <option value="pt-br">Brasil</option>
-            <option value="it">Italia</option>
-            <option value="De">Alemanha</option>
-        </datalist>
+        <input type="button" value="Verificar" onclick="Verificar()">
+        <div id="res">
+
+        </div>    
     </fieldset>
+    <!--
+            <select name="estado" id="estados">
+                <option value="Eua">Estados unidos</option>
+                <option value="br">Brasil</option>
+                <option value="It">Italia</option>
+                <option value="De">Alemanha</option>
+        </select>
+    -->
 
 
+    <script>
+        
+        function Verificar() {
+            var local = window.document.getElementById('pais')
+            var res = window.document.querySelector('div#res')
+            var pais = 'Brasil'
+            res.innerHTML = `<p> Você esta vivendo em ${pais}</p>`
+            if (pais == 'Brasil') {
+                res.innerHTML += `<p>Você é de fora</p>`
+            } else {
+                res.innerHTML += `<p>Você é brasileiro </p>`
+            }
+        }
+    </script>
 </body>
 </html> 
