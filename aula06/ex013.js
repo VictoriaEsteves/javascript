@@ -1,3 +1,5 @@
+
+// agora pegando o horario do pc :P
 var agora = new Date()
 var hora = agora.getHours()
 
