@@ -11,39 +11,29 @@
     </style>
 </head>
 <body>
-    
-    <fieldset>
-        <h1>Por favor informe de onde você é:</h1>
-        <label for="pais">Onde você mora :</label>
-        <input type="text" id="pais">
-        <input type="button" value="Verificar" onclick="Verificar()">
-        <div id="res">
 
-        </div>    
-    </fieldset>
-    <!--
-            <select name="estado" id="estados">
-                <option value="Eua">Estados unidos</option>
-                <option value="br">Brasil</option>
-                <option value="It">Italia</option>
-                <option value="De">Alemanha</option>
-        </select>
-    -->
-
+    <h1>Sistema de País</h1>
+    <input type="text" name="txtpais" id="textpais"> País 
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
 
     <script>
-        
-        function Verificar() {
-            var local = window.document.getElementById('pais')
-            var res = window.document.querySelector('div#res')
-            var pais = 'Brasil'
-            res.innerHTML = `<p> Você esta vivendo em ${pais}</p>`
-            if (pais == 'Brasil') {
-                res.innerHTML += `<p>Você é de fora</p>`
+        function calcular() {
+            var qpais = document.getElementById('textpais').value;
+            var res = document.getElementById('res');
+
+            if (qpais.toLowerCase() === 'brasil') {
+                res.innerHTML = 'Você é Brasileiro';
             } else {
-                res.innerHTML += `<p>Você é brasileiro </p>`
+                res.innerHTML = 'Você é Estrangeiro';
             }
         }
     </script>
 </body>
 </html> 
+
+<!--
+
+
+
+-->
