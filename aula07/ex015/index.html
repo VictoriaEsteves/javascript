@@ -20,8 +20,11 @@
             border-radius: 15px;
             text-align: center;
         }
-        input {
-            padding-top: 50px;
+        form {
+            text-align: left;
+        }
+        .cer {
+            padding-top: 10px;
         }
         footer {
             text-align: center;
@@ -34,14 +37,22 @@
     </header>
     <section>
         <form action="" method="get">
-            <label for="anoN">Ano de Nascimento:</label>
-            <input type="text" name="ano" id="anoN">
+            <div>
+                <label for="anoN">Ano de Nascimento:</label>
+                <input type="number" name="ano" id="anoN" max="4">
+            </div>
             <br>
-            <label for="">Sexo:</label>
-            <input type="radio" name="sex" id="isexmasc">
-            <label for="isexmasc">Masculino</label>
-            <input type="radio" name="sex" id="isexfem">
-            <label for="isexfem">feminino</label>
+            <div>
+                <label for="">Sexo:</label>
+                <input type="radio" name="sex" id="isexmasc">
+                <label for="isexmasc">Masculino</label>
+                <input type="radio" name="sex" id="isexfem">
+                <label for="isexfem">feminino</label>
+            </div>
+            <div class="cer">
+                <input type="submit" value="Verify">
+            </div>
+            <p>Prencha os dados acima para ver o resultado</p>
         </form>
     </section>
     <footer>
