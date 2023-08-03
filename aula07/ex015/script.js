@@ -3,6 +3,7 @@ function verificar() {
     var ano = data.getFullYear()
     var fano = document.getElementById('txtano')
     var resp = document.querySelector('div.res')
+    var foto = document.querySelector('div#img')
 
     if(fano.value.length == 0 || Number(fano.value) > ano || fano.value.length < 4) {
         window.alert('Verifique se os dados estão corretos e tente novamente!')
