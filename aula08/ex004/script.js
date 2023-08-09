@@ -15,7 +15,7 @@ if (numini <=0 || numfim <= 0 || numpass <= 0) {
     var p = Number(numpass.value)
 }
 
-for(let c = i; c <= f; c += p) {
+for(var c = i; c <= f; c += p) {
     res.innerHTML += ` ${c} ` 
 }
     
