@@ -8,9 +8,7 @@ while (c <= 10) //teste {
 estrutura do for:
 
 for (inicio; teste; incremento) {
-    
 }
-
 */
 
 for (var c=1; c <= 10; c++) {
