@@ -8,7 +8,9 @@ function Tabuada() {
         let c = 1
         while (c <= 10) {
             let item = document.createElement('Option')
-            item.text = `${} x ${} = ${}` 
+            item.text = `${n} x ${c} = ${n*c}`
+            tab.appendChild(item)
+            C++
         }
     }
 }
