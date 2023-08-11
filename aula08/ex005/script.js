@@ -12,7 +12,7 @@ function Tabuada() {
         tab.innerHTML = '';
 
         while (c <= 10) {
-            let item = document.createElement('option');
+            let item = document.createElement('Option');
             item.text = `${n} x ${c} = ${n * c}`;
             tab.appendChild(item);
             c++;
