@@ -8,4 +8,4 @@ function parimp(n) {
     }
 }
 
-console.log(res)
+console.log(parimp(225)) // Não criei outra variavel so fiz direto
