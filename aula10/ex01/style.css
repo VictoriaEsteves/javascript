@@ -25,6 +25,10 @@ input {
     width: 55%;
 }
 
+select {
+    width: 100px;
+}
+
 #forms {
     text-align: center;
 }
