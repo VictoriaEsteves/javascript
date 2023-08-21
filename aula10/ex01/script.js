@@ -19,12 +19,13 @@ function inlist(n, l) {
     }
 }
 
-function adcionar() {
+function adicionar() {
     if(isnumber(num.value) && !inlist(num.value, valores)) {
         valores.push(Number(num.value))
-        item.text = `Valor ${num.value} adicionado`
         let item = document.createElement('option')
+        item.text = `Valor ${num.value} adicionado.`
         list.appendChild(item)
+
     } else {
         window.alert('Coloque um numero valido!')
     }
