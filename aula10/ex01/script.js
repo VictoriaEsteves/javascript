@@ -20,6 +20,7 @@ function inlist(n, l) {
 }
 
 function adicionar() {
+    
     if(isnumber(num.value) && !inlist(num.value, valores)) {
         valores.push(Number(num.value))
         let item = document.createElement('option')
