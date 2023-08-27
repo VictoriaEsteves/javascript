@@ -1,9 +1,10 @@
-let num = document.querySelector('input#num')
-let list = document.querySelector('lstNum')
+let num = document.querySelector('input#fnum')
+let list = document.querySelector('select#flist')
 let res = document.querySelector('div#res')
 let valores = []
 
-function isnumber(n) {
+function isnum(n) {
+
     if(Number(n) >= 1 && Number(n) <= 100) {
         return true
     } else {
@@ -11,9 +12,9 @@ function isnumber(n) {
     }
 }
 
-function inlist(n, l) {
-    
-    if(l.indexOf(Number(n)) != -1) {
+function inList(n, l) {
+
+    if (l.indexOf(Number(n)) != -1) {
         return true
     } else {
         return false
@@ -21,14 +22,9 @@ function inlist(n, l) {
 }
 
 function adicionar() {
-
-    if(isnumber(num.value) && !inlist(num.value, valores)) {
-        valores.push(Number(num.value))
-        let item = document.createElement('option')
-        item.text = `Valor ${num.value} adicionado.`
-        list.appendChild(item)
+    if(isnum(num.value) && !inList(num.value, valores)) {
 
     } else {
-        window.alert('Coloque um numero valido!')
+        window.alert('Valor invalido ou já obtido!')
     }
-} 
+}
