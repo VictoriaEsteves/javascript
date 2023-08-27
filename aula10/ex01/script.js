@@ -36,12 +36,18 @@ function adicionar() {
 }
 
 function finalizar() {
-    if(valores.length == 0) {
+
+    if (valores.length == 0) {
         window.alert('Adicione dados para fazer os calculos')
     } else {
         let tot = valores.length
 
         res.innerHTML = ''
-        res.innerHTML += `<p>Ao todo temos ${tot} Numeros Cadastrados</p>`
+        res.innerHTML += `Ao todo temos ${tot} Numeros Cadastrados`
     }
+
 }
+
+/*
+
+*/
