@@ -1,5 +1,5 @@
 let amigo = { nome:'Julio', 
-sexo:'masculino', 
+sexo:'Masculino', 
 peso: 85.4, 
 engordar(p=0){
     console.log("engordou!")
